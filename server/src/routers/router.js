@@ -5,7 +5,6 @@ const getCurrentData = require('./../utils/getDataByName')
 const getForcastData = require('./../utils/getDataByForcast')
 
 router.get('/weather/:city', (req, res) => {
-    // console.log(req.params.city)
     if(!req.params.city){
         return res.send({
             desc: "Must Provide City Name",
